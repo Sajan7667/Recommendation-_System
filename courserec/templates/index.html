@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+<div class="jumbotron text-center" >
+  
+  <div class="container">
+   
+    <h1>Course Recommendations</h1>
+    <p>Enter your preferred specialization to receive recommendations!</p>
+
+    <form id="specform" action="/recommendations/" method="POST">
+      {% csrf_token %}
+      <select required name="spec" style="color:rgb(0, 0, 0); font-size:14pt; height:40px; width:300px">
+         <option value=""> None</option>
+        
+         <option value="ML"> MACHINE LEARNING</option>
+         <option value="AI"> ARTIFICIAL INTELLIGENCE</option>
+         <option value="IoT"> INTERNET of THINGS</option>
+         <option value="DL"> DEEP LEARNING</option>
+      </select>
+      
+      <br>
+      <br>
+      
+      <input type="submit" class="btn btn-dark" value="Recommendations" >
+    </form>
+  </div>
+</div>
+
+<div class="container">
+  <center>
+    <h1>
+      Your Recommendations
+    </h1>
+  </center>
+  
+  <br>
+  
+  <div class="row">
+
+    <center>
+      <h3>
+        Nothing yet! Choose a specialization and you'll see your recommendations here.
+      </h3>
+    </center>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+  </div> <!-- row -->
+  
+   <div class="alert alert-info text-center" role="alert">
+    Disclaimer: this website is not affiliated with the 
+   </div>
+  
+</div>
+{% endblock %}

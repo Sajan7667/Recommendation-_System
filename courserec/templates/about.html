@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+<div class="jumbotron text-center">
+  <div class="container">
+    
+    <h1>About this website </h1>
+    <p>Who made it and how it works. </p>
+  </div>
+</div>
+<div class="container">
+
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>
+        <span class="glyphicon glyphicon-blackboard"></span> 
+        Contributors
+      </h3>
+      
+      <ul>
+        <li>
+            <a href="https://www.linkedin.com/in/sajan-s-031541200">Sajan.S</a>: Developed frontend, backend. 
+            
+        </li>
+
+        <li>
+            <a href="https://github.com/Sajan7667">github</a>: Uploading project in github.
+        </li>
+
+      </ul>
+    </div>
+    
+    <div class="col-sm-4">
+      <h3>
+        <span class="glyphicon glyphicon-th-list"></span> 
+        Backend
+      </h3>
+      <ul>
+
+        <li>
+            <strong>v1.0: Popularity Based Recommender:</strong> Based on your selected specialization, recommends relevant courses based on popularity among students.
+        </li>
+
+      </ul>
+    </div>
+      <div class="col-sm-4">
+      <h3>
+        <span class="glyphicon glyphicon-equalizer"></span> 
+        Data
+      </h3>
+      
+      <ul>
+        
+        <li>
+            Initial data: synthetic.
+        </li>
+        
+      </ul>
+        
+    </div>
+
+  </div> <!-- row -->
+   <div class="alert alert-info text-center" role="alert">
+    Disclaimer: this website is not affiliated with the Boston IT Solutions,india.
+  </div>
+</div>
+{% endblock %}
