@@ -2,10 +2,7 @@
 
 A recommendation engine for college courses.
 
-### Current version: 1.0
-Popularity-based recommender for UC Berkeley CS classes.
 
-![](extra/home.png)
 
 ## How it works
 1. Enter information about yourself (preferred specialization)
