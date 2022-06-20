@@ -58,4 +58,70 @@
    </div>
   
 </div>
+<center>
+<form action="/action_page.php">
+  <div class="container">
+    <h1>APPLICATION FORM</h1>
+    <p>Please fill in this form to get recommendation.</p>
+    <hr>
+
+    <label for="f_name"><b>First Name</b></label><br>
+    <input type="text"  name="f_ name" id="f_name" required>
+    <br>
+
+    <label for="l_name"><b>Last Name</b></label><br>
+    <input type="text"  name="l_name" id="l_name" required>
+    <br>
+
+    <label for="gender"><b>Gender</b></label><br>
+    <input type="text"  name="gender" id="gender" required>
+    <br>
+
+    <label for="age"><b>Age</b></label><br>
+    <input type="text"  name="age" id="l_name" required>
+    <br>
+
+    <label for="phone"><b>Phone</b></label><br>
+    <input type="text"  name="phone" id="phone" required>
+    <br>
+
+    <label for="email"><b>Email</b></label><br>
+    <input type="text"  name="email" id="email" required>
+    <br>
+
+    <label for="job"><b>Job Title</b></label><br>
+    <select name="job" id="job" required>
+      <option value="accounting">Accounting</option>
+      <option value="bpo">BPO</option>
+      <option value="it">IT</option>
+      <option value="marketing">Marketing</option>
+      <option value="sales">Sales</option>
+      <option value="student">Student</option>
+      <option value="teaching">Teaching</option>
+      <option value="others">Others</option>
+    </select>
+    <br>
+    <br>
+
+    <label for="company"><b>Company / Organisation</b></label><br>
+    <input type="text"  name="company" id="company" required>
+    <br>
+
+    <label for="intrest"><b>Which type of course are you intrested in ?</b></label><br>
+    <select id="intrest" name="intrest"  required>
+      <option value="ml">Machine Learning</option>
+      <option value="dl">Deep Learning</option>
+      <option value="ai">Artificial Intelligence</option>
+      <option value="iot">IoT</option>
+    </select>
+    <br>
+
+    <hr>
+    
+    <center><button type="submit" class="submit">Submit</button></center>
+  </div>
+  
+  
+</form>
+</center>
 {% endblock %}
